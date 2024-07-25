@@ -1,0 +1,47 @@
+.books {
+    display: grid;
+    grid-template-areas: 'AlphabeticalSearch main'
+                            'AlphabeticalSearch main';
+    grid-template-columns: 1fr 4fr;    
+
+    gap: 10px;
+
+    &__alphabetical-search {
+        grid-area: AlphabeticalSearch;
+    }
+    &__pagination {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    &__main {
+        grid-area: main;
+        align-self: center;
+        justify-self: center;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:1400px) {
+   
+}
+@media (max-width:1200px) {
+   
+}
+@media (max-width:1000px) {
+   
+}
+@media (max-width:720px) {
+   .books {
+    display: flex;
+    flex-direction: column;
+   }
+}
+@media (max-width:500px) {
+   
+}
+

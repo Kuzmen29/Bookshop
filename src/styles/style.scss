@@ -1,0 +1,84 @@
+@import url(./reset.scss);
+
+@font-face {
+    font-family: "Mayak Medium";
+    src: url("./Mayak Medium/Mayak Medium.otf");
+}
+
+body {
+    overflow-y: scroll;
+}
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fffbef;
+    font-family: "Mayak Medium", sans-serif;
+}
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.app__header {
+    grid-area: header;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+}
+.app__main {
+    flex: 1;
+}
+
+.footer {
+    padding: 5px;
+    text-align: center;
+}
+@media (max-width: 2000px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1920px) {
+    :root {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1600px) {
+    :root {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1200px) {
+    :root {
+        font-size: 10px;
+    }
+}
+@media (max-width: 1000px) {
+    .app__header {
+        position: static;
+    }
+}
+@media (max-width: 720px) {
+    :root {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {
+    :root {
+        font-size: 11px;
+    }
+}
+@media (max-width: 250px) {
+    :root {
+        font-size: 5px;
+    }
+}
+

@@ -1,0 +1,41 @@
+.alphabetical-search {
+    
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 15px;
+
+    box-shadow: 3px 0 15px gold;
+
+    border: 3px orange solid;
+
+    background: #fdc830;
+    background: -webkit-linear-gradient(to bottom, #f37335, #fdc830);
+    background: linear-gradient(to bottom, #f37335, #fdc830);
+
+    &__letter {     
+
+        width: 2.3rem;
+        height: 2.3rem;
+
+        font-size: 1.3rem;
+
+        background-color: white;
+
+        border: 1px solid gray;
+        border-radius: 50%;
+
+        cursor: pointer;
+        transition: transform 0.3s linear;
+
+        &:hover {
+            background-color: rgb(255, 207, 72);
+            font-weight: 700;
+            transform: scale(1.2);
+            color: darkred;
+        }
+    }
+}

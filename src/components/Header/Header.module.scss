@@ -1,0 +1,202 @@
+@import url(./fonts/fonts.scss);
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+
+    padding: 0 20px;
+
+    justify-content: space-between;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+
+    cursor: pointer;
+    &__image {
+        width: 5rem;
+    }
+    &__title {
+        font-size: 3.5rem;
+        line-height: 0.7;
+
+        font-family: Troika, serif;
+        color: rgb(255, 215, 0);
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    width: 30rem;
+
+    border: 3px solid rgb(255, 215, 0);;
+    border-radius: 8px;
+    &:hover {
+        border: 3px solid orange;
+        box-shadow: 1px 1px 2px 0 rgb(255, 215, 0);
+    }
+
+    &__input {
+        width: 90%;
+        height: 3rem;
+
+        padding: 0 15px;
+
+        font-size: 1.3rem;
+        font-family: "Red October", serif;
+
+        color: black;
+        border: none;
+        border-radius: 8px;
+
+        &:focus {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.7rem;
+        }
+    }
+    &__button {
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+.navigation {
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+
+    &__item {
+        width: 10rem;
+        text-align: center;
+
+        padding: 15px 10px;
+
+        border: 3px solid rgb(255, 215, 0);
+        border-radius: 5px;
+
+        font-family: Popeda, sans-serif;
+        // font-weight: bold;
+        font-size: 1.8rem;
+
+        background-color: antiquewhite;
+        cursor: pointer;
+
+        &:hover, &_active {
+            background-color: orange;
+            color: white !important;
+            transition: background-color 0.2s linear, color 0.2s linear;
+        }
+    }
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    &__item {
+        padding: 10px;
+        border-radius: 16px;
+        transition: background-color 0.2s linear;
+        &:hover {
+            background-color: orange;
+        }
+    }
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    &__image {
+        width: 4rem;
+    }
+    &__name {
+        padding: 5px;
+
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+}
+.basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    &__image {
+        width: 4rem;
+    }
+    &__count {
+        padding: 5px;
+
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    &__image {
+        width: 4rem;
+    }
+    &__count {
+        padding: 5px;
+
+        font-size: 20px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+    }
+    .search {
+    }
+    .navigation__item {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+@media (max-width: 720px) {
+}
+@media (max-width: 500px) {
+    :root {
+        font-size: 10px;
+    }
+}

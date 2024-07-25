@@ -1,0 +1,13 @@
+.in-developing {
+    text-align: center;
+
+    &__title {
+        font-size: 5rem;
+        color: rgb(213,48,50);   
+    }
+    &__image {
+        display: block;
+        margin: auto;
+        width: 50rem;
+    }
+}

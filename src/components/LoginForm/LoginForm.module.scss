@@ -1,0 +1,53 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    padding: 30px;
+
+    border: 5px solid white;
+    border-radius: 16px;
+    background-color: orange;
+
+
+    &__remember-me {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__input {
+        padding: 10px;
+        font-size: 1.2rem;
+
+        border-radius: 8px;
+    }
+    &__label {
+        font-size: 1.5rem;
+        user-select: none;
+    }
+    &__checkbox {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: auto;
+    }
+    &__button {
+        width: 10rem;
+
+        padding: 10px 15px;
+        font-size: 1.2rem;
+        background-color: white;
+
+        border-radius: 8px;
+    }
+    &__error {
+        text-align: center;
+
+        padding: 5px 10px;
+
+        background-color: white;
+        color: brown;
+        border: 1px solid brown;
+        border-radius: 8px;
+    }
+}

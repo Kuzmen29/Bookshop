@@ -1,0 +1,16 @@
+.star-rating {
+    display: flex;
+    gap: 10px;
+    
+    &__star {
+        cursor: pointer;
+
+        &:hover{
+            fill: gold;
+        }
+
+        &_gold {
+            fill: gold;
+        }
+    }
+}

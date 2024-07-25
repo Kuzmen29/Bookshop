@@ -1,0 +1,18 @@
+.pagination {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 5px;
+
+    &__page-number {
+        padding: 5px 15px;
+        border-radius: 50%;
+        border: 1px solid rgb(255, 165, 0);
+
+        cursor: pointer;
+        &_active {
+            background-color: rgb(255, 165, 0, 0.5);
+        }
+    }
+}

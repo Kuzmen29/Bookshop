@@ -1,0 +1,195 @@
+@import url(./fonts/fonts.scss);
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__main {
+        display: grid;
+        grid-template-columns: 3fr 5fr 2fr;
+        align-items: flex-start;
+    }
+}
+
+.images {
+    cursor: pointer;
+
+    &__modal-window {
+        &-close {
+            position: fixed;
+            top: 25px;
+            right: 70px;
+            cursor: pointer;
+        }
+        &-main-image {
+            border: 1px solid orange;
+            border-radius: 16px;
+            height: 50rem;
+            width: 35rem;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+        &-all-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &-item-images {
+            height: 6rem;
+            width: 5rem;
+            object-fit: contain;
+            border: 1px solid orange;
+            border-radius: 8px;
+            &:hover {
+                box-shadow:
+                    3px 3px 10px white,
+                    -3px 3px 10px white,
+                    3px -3px 10px white,
+                    -3px -3px 10px white;
+            }
+            cursor: pointer;
+        }
+    }
+    &__main-image {
+        border-radius: 16px;
+        height: 30rem;
+        width: 22rem;
+        margin: 0 auto 20px;
+    }
+    &__all-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    &__item-image {
+        height: 6rem;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+.info {
+    padding: 0 20px;
+    width: 100%;
+    &__name-book {
+        padding: 10px;
+        font-size: 2.5em;
+        // font-family: "Izvestija", sans-serif;
+        font-family: "Pravda", sans-serif;
+        text-shadow: 0 0 5px white;
+    }
+    &__name-author {
+        padding: 10px;
+        font-size: 1.5em;
+        color: dodgerblue;
+        // font-family: "Soviet", sans-serif;
+        font-family: "Izvestija", sans-serif;
+    }
+    &__data {
+        padding: 10px;
+        width: 100%;
+
+        font-size: 1.3em;
+        font-family: "Trud", sans-serif;
+        color: gray;
+        & td {
+            padding: 10px 0;
+        }
+        & td:last-child {
+            color: black;
+        }
+    }
+}
+
+.order {
+    padding: 20px;
+    // position: sticky;
+    // top: 200px;
+    border: 4px solid orange;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    &__price {
+        font-size: 3em;
+        color: red;
+    }
+    &__basket {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: yellowgreen;
+        color: yellow;
+        font-size: 2em;
+        font-weight: 700;
+    }
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    &__thoughts {
+        font-size: 2em;
+        // font-weight: 700;
+    }
+    &__add-button {
+        padding: 0 15px 0 15px;
+        background-color: #ffd700;
+        font-size: 1.3em;
+        border-radius: 8px;
+    }
+    &__comment {
+        background-color: rgb(255, 250, 205);
+        padding: 30px;
+        border-radius: 15px;
+    }
+    &__user {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        &-theme {
+            margin-bottom: 20px;
+        }
+        &-thought {
+            word-break: break-all;
+        }
+    }
+    &__nocomment {
+        & h1 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 720px) {
+    .book-item {
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 500px) {
+}

@@ -1,0 +1,119 @@
+.basket {
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__list {
+        flex-grow: 2;
+    }
+    &__title {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    &__empty {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    
+}
+
+.order {
+        align-self: flex-start;
+        position: sticky;
+        top: 250px;
+        margin: 15px;
+        padding: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 5px solid orange;
+        border-radius: 15px;
+
+        background-color: white;
+        
+        &__value {
+            font-size: 2rem;
+        }
+        &__summa {
+            font-size: 3rem;
+            color: crimson;
+        }
+        &__button {
+            font-size: 2rem;
+            background-color: gold;
+            padding: 5px;
+            border-radius: 10px;
+        }
+}
+
+.book {
+    background-color: beige;
+
+    padding: 20px;
+    border-bottom: 5px solid orange;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__poster {
+        height: 20rem;
+        width: 14rem;
+        object-fit: cover;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__name {
+        font-size: 2em;
+    }
+    &__author {
+        color: dodgerblue;
+    }
+    &__price {
+        color: #dc143c;
+        font-size: 3em;
+    }
+    &__remove {
+        width: 3rem;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 720px) {
+    .basket {
+        margin-bottom: 10rem;
+    }
+    .order {
+            position: fixed;
+            top: initial;
+            bottom: 0;
+
+            width: 90%;
+            
+            padding: 10px;
+            margin: initial;
+            flex-direction: initial;
+            flex-wrap: wrap;
+            
+            justify-content: center;
+
+            &__value {
+                margin-right: 20px;
+            }
+    }
+}
+@media (max-width: 500px) {
+}
